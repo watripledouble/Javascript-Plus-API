@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@200;500&family=Kanit&family=Mali:wght@500&family=PT+Sans+Narrow:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right top, #f6c3ef, #f5b6f0, #f2aaf2, #ee9df5, #e991f8);
+  margin: 0;
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Mali', cursive;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  color: #fff;
+  letter-spacing: 2px; 
+  text-align: center;
+}
+
+.header {
+  margin-top: -40px;
+}
+
+.container {
+  background-color: #e991f8;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  flex-wrap: wrap;  
+  border-radius: 20px;
+  box-shadow: 7px -6px 7px -3px rgba(0,0,0,0.75);
+ -webkit-box-shadow: 7px -6px 7px -3px rgba(0,0,0,0.75);
+ -moz-box-shadow: 7px -6px 7px -3px rgba(0,0,0,0.75);
+  
+}
+
+.images, .buttons  {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;   
+  flex-wrap: wrap; 
+  width: 100%;  
+}
+
+#dog-img, #cat-img {
+  background-color: #fff;
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+}
+
+#dog-img img, #cat-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+}
+
+#btn-dog, #btn-cat {
+  margin: 10px;
+  padding: 2px 12px;
+  border-radius: 10px;
+  outline: none;  
+  font-family: inherit;
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #2de9d3;
+  cursor: pointer;
+}
+
+#btn-dog:hover, #btn-cat:hover {
+  background-color: #c3f447;
+  transform: scale(1.2);
+}
+
+#btn-dog:active, #btn-cat:active {
+  transform: scale(.9);
+}
+
+@media only screen and (max-width: 590px) {
+  .header {
+    font-size: 100px;
+  }
+  #dog-img, #cat-img {
+    background-color: #fff;    
+    width: 200px;
+    height: 200px;
+  }
+}
